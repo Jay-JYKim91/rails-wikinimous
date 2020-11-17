@@ -1,0 +1,7 @@
+<div class="container">
+  <h1><%= @article.title %></h1>
+  <p><%= @article.content %></p>
+  <%= link_to '✏️', edit_article_path(@article.id) %>
+  <%= link_to '🗑', article_path(@article.id), method: :delete, data: {confirm: "Confirm to delete?"} %>
+</div>
+
